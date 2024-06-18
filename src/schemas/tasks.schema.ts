@@ -1,7 +1,7 @@
 import { Prop, Schema, SchemaFactory } from '@nestjs/mongoose';
 import { TaskStatus } from 'src/common/enums/enum';
 import { v4 as uuidv4 } from 'uuid';
-
+import { Document } from 'mongoose';
 
 @Schema({ timestamps: { createdAt: 'created_at', updatedAt: 'updated_at' } })
 export class Task extends Document {
